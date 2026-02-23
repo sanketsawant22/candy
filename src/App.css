@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Akina";
+  src: url("/fonts/Akina-s.p.39192fb1.woff") format("woff");
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("/fonts/Manrope_Variable-s.p.a2ecc1bf.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roundo";
+  src: url("/fonts/Roundo_Variable-s.p.3da6ac6c.woff2") format("woff2");
+  font-display: swap;
+  font-style: normal;
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-Akina: Akina, sans-serif;
+  --font-Manrope: Manrope, sans-serif;
+  --font-Roundo: Roundo, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #ece7f2;
+}
+
+body {
+  overscroll-behavior: none;
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* IE & Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
